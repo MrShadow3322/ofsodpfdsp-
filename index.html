@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Маркетплейс</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Шапка -->
+    <header>
+      <h1>Маркетплейс</h1>
+    </header>
+
+    <!-- Основная часть -->
+    <main>
+      <div class="products">
+        <!-- Карточка товара -->
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150" alt="Изображение товара">
+          <h2>Название товара</h2>
+          <p class="price">Цена: 200 ₴</p>
+          <button class="buy-btn">Купить</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Навигация -->
+    <footer>
+      <button class="nav-btn" id="home-btn">Главная</button>
+      <button class="nav-btn" id="search-btn">Поиск</button>
+      <button class="nav-btn" id="profile-btn">Профиль</button>
+    </footer>
+  </div>
+
+  <!-- Страница профиля -->
+  <div id="profile-page" class="hidden">
+    <header>
+      <h1>Профиль</h1>
+    </header>
+    <main>
+      <div class="profile-info">
+        <p><strong>ID пользователя:</strong> <span id="user-id"></span></p>
+        <h2>История заказов:</h2>
+        <ul id="order-history">
+          <li>Заказов пока нет.</li>
+        </ul>
+      </div>
+      <button id="back-btn">Назад</button>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
